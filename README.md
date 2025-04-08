@@ -1,6 +1,6 @@
 # Crawling
 
-## klas-lecture-plan-crwler
+## klas-lecture-plan-crawler
 해당 크롤링은 광운대학교 강의계획서를 크롤링하여 각 강의실의 강의실 위치 정보를 가져오는 코드입니다.     
 먼저 klas 및 강의계획서까지의 과정을 제공해준 민혁님에게 감사를 표합니다.
 
