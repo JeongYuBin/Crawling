@@ -2,13 +2,14 @@ import os
 import re
 import pdfplumber
 from pymongo import MongoClient
+from dotenv import load_dotenv
 
 # 경로 설정
 current_dir = os.path.dirname(os.path.abspath(__file__))
 pdf_path = os.path.join(current_dir, "2024_1_sch.pdf")
 
 # MongoDB 연결
-client = MongoClient("mongodb+srv://kwuraspberry:LRmSwPMVSwycS101@chic.0hccf.mongodb.net/class?retryWrites=true&w=majority")
+client = MongoClient(os.getenv("MONGO_URI"))
 db = client["class"]
 collection = db["2024-2"]
 
